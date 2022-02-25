@@ -1,0 +1,34 @@
+.video {
+    height: 100vh;
+    position: relative;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video__overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: .5);
+
+        .video__controls {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid var(--color-golden);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}

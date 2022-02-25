@@ -1,0 +1,30 @@
+.menuitem {
+    margin-bottom: 2rem;
+    .menuitem__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        .menuitem__heading {
+            color: var(--color-golden);
+            letter-spacing: 1px;
+        }
+
+        .menuitem__head-pric {
+            display: flex;
+            align-items: center;
+            div {
+                width: 60px;
+                height: 1px;
+                background-color: var(--color-golden);
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .menuitem__tages {
+        color: var(--color-gray);
+        font-size: 15px;
+
+    }
+}

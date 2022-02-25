@@ -1,0 +1,51 @@
+.aboutus {
+    position: relative;
+    min-height: 100vh;
+
+    .aboutus__overlay {
+        position: absolute;
+        z-index: 1;
+        img {
+            width: 391px;
+            height: 415px;
+        }
+    }
+
+    
+    .aboutus__content {
+        z-index: 2;
+            @media (max-width: 992px) {
+                & {
+                    flex-direction: column;
+                }
+            }
+        .aboutus__content-knife {
+            img {
+                height: 810px;
+            }
+        }
+
+        .aboutus__content-about{
+            display: flex;
+            justify-content:flex-end;
+            align-items: flex-end;
+            text-align: right;
+            flex-direction: column;
+            margin-right: 40px;
+        }
+
+        .aboutus__content-history{
+            display: flex;
+            justify-content:flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+            line-height: 1.7;
+            color: var(--color-gray);
+        }
+    }
+}
